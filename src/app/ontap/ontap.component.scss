@@ -1,0 +1,15 @@
+img{
+    max-width: 100%;
+}
+
+.green {
+    background-color: green;
+    //hiệu ứng chuyển cảnh
+    transition: background-color 0.5s ease;
+}
+
+.yellow {
+    background-color: yellow;
+    //hiệu ứng chuyển cảnh
+    transition: background-color 0.5s ease;
+}

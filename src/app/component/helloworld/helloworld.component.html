@@ -1,0 +1,21 @@
+<h1>Bui Anh Tuan</h1>
+<h6>{{xyz}}</h6>
+<h6>{{abc}}</h6>
+<h6>{{ert}}</h6>
+<button (click)="add(n1,n2)">ADD</button>
+<label>A</label>
+<input type="number" [(ngModel)]="n1">
+<label>B</label>
+<input type="number" [(ngModel)]="n2">
+<table class="table table-bordered">
+    <tr>
+        <th>Ten</th>
+        <th>Tuoi</th>
+        <th>Dia chi</th>
+    </tr>
+    <tr *ngFor="let c of m1">
+        <td>{{c.ten}}</td>
+        <td>{{c.tuoi}}</td>
+        <td>{{c.diachi}}</td>
+    </tr>
+</table>

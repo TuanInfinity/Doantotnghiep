@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    Sản phẩm nổi bật
+                </div>
+                <div class="card-body" [ngClass]="c">
+                    <img [src]="productImage" alt="">
+                </div>
+                <div class="card-footer">
+                    Tên sản phẩm {{ productName}}
+                    <br>
+                    <p>Giá: {{ productPrice }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<button (click)="changeColorGreen()">Thay đổi màu xanh cho  thẻ card</button>
+<button (click)="changeColorYellow()">Thay đổi màu vang cho  thẻ card</button>
+</div>
