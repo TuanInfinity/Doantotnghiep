@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to right, #34B7A2, #34B7A2, #34B7A2, #34B7A2);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.box-login{
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    height: 300px;
+}
+.box-login h3{
+    text-align: center;
+    color: #0B847A;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+form .but{
+    text-align: center;
+    background-color: #0B847A;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 20px;
+}
+.input{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.input input{
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}

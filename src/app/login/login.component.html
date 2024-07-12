@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box-login">
+        <h3>Login</h3>
+        <form (submit)="login()">
+            <div class="input">
+                <input [(ngModel)]="userLogin.username" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input">
+                <input [(ngModel)]="userLogin.password" [type]="typePassword" name="password" placeholder="Password">
+            </div>
+            <div class="check-box">
+                <input (change)="show()" type="checkbox" name="showpass"> Show Password
+            </div>
+            <button type="submit" class="but">Sign In</button>
+        </form>
+
+        <table class="table bg dark">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of users">
+                    <td>{{u.username}}</td>
+                    <td>{{u.password}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
