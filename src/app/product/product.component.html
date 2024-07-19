@@ -1,0 +1,44 @@
+<h1>Danh sách sản phẩm</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Create At</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="ho" *ngFor="let p of product" (click)="detail(p.id)">
+            <td>{{p.id}}</td>
+            <td>{{p.productname}}</td>
+            <td>{{p.createat}}</td>
+            <td>
+                <button (click)="detail(p.id)">Detaill</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="this.productDetails.length > 0">
+    <h1>Danh sách chi tiết của sản phẩm {{productIselected.productname}}</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Price</th>
+                <th>Size</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pd of productDetails">
+                <td>{{pd.id}}</td>
+                <td>{{pd.price | currency: 'JPY':'symbol'}}</td>
+                <td>{{pd.size}}</td>
+                <td>{{pd.color}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
